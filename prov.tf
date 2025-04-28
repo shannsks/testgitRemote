@@ -26,6 +26,7 @@ resource "azurerm_resource_group" "testgt" {
 
 resource "azurerm_storage_account" "testgt" {
   name = "stgshan888"
+  location = "East us"
   resource_group_name = "test_rg"
   account_tier = "Standard"
   account_replication_type = "LRS"
